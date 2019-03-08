@@ -19,6 +19,11 @@ when you want to build OpenCV for a limitted embedded system use this
  cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_FFMPEG=0 -D WITH_CUDA=OFF ..
 ```
 
+if you want to build one target ony with multi cores 
+```
+cmake --build . --target MyExe -- -j4
+```
+
 # Cmake older version installation
 
 ```
