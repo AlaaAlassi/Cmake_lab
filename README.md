@@ -38,7 +38,10 @@ now you dont need to install cmake (using sudo make install), instead you can se
 ```
 export PATH=~/Downloads/cmake-3.12.3/bin:$PATH
 ```
-
+It is possible that one of the libraries is missing from cmake, you can skip it 
+```
+cmake -DCMAKE_USE_OPENSSL=OFF
+```
 
 # g++ stuff
 when you build ros melodic, make sure that your g++ supports c++11
